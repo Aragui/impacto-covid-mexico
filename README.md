@@ -1,2 +1,2 @@
-# impacto del covid en mexico
+# Impacto del Covid-19 en México
  
