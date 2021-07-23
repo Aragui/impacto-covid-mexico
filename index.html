@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19: Evolución catastrófica en México</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="head">
+        <h1>Covid-19: Evolución catastrófica en México</h1>
+    </header>
+    <main class="body">
+        <div class="card">
+            <div class="column" id="col-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Estado</th>
+                            <th>Población afectada</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body">
+                    </tbody>
+                </table>
+            </div>
+            <div class="column">
+                <div id="map"></div>
+                <div class="controls">
+                    <label for="may2020" class="control">
+                        <input type="radio" class="radio" name="date" id="may2020" checked hidden>
+                        <span>Mayo 2020</span>
+                    </label>
+                    <label for="dic2020" class="control">
+                        <input type="radio" class="radio" name="date" id="dic2020" hidden>
+                        <span>Diciembre 2020</span>
+                    </label>
+                    <label for="may2021" class="control">
+                        <input type="radio" class="radio" name="date" id="may2021" hidden>
+                        <span>Mayo 2021</span>
+                    </label>
+                </div>
+
+                <div class="disclaimer">
+                    <small>*El cálculo de colores se basa en el impacto del virus a lo largo <br/>del tiempo y no en el semáforo epidemiológico.</small>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

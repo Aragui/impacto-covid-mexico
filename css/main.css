@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(223, 223, 223);
+    font-family: 'Lato', sans-serif;
+}
+
+header.head{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    -webkit-box-shadow: 0px 2px 20px 3px #959595; 
+    box-shadow: 0px 2px 20px 3px #959595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.head > h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+main.body{
+    width: 100;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+
+    padding-top: 36px;
+}
+
+.card{
+    background-color: white;
+    border: 1px solid #c0bcbc;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    margin: 0 24px;
+}
+
+.table{
+    width: 500px;
+}
+
+#col-table{
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+#map{
+    height: 300px;
+    width: 480px;
+}
+
+.controls{
+    width: 480px;
+    height: 80px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.control{
+    height: 35px;
+    border: 1px solid #c0bcbc;
+    border-radius: 12px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 2px 5px 1px #959595; 
+    box-shadow: 0px 2px 5px 1px #959595;
+    cursor: pointer;
+    animation: ease-in-out 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.control:hover{
+    transform: scale(0.91);
+    background-color: rgb(223, 223, 223);
+}
+
+.control > span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio:checked ~ span{
+    background-color: rgb(235, 231, 22);
+}
